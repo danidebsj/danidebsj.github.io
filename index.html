@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio - COMUNIDAD SOTG</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        main {
+            flex: 1;
+        }
+        
+        .sticky-footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SOTG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="otrapagina.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Más opciones</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Otra acción</a>
+                            <a class="dropdown-item" href="#">Algo más aquí</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Enlace separado</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">COMUNIDAD SOTG</h4>
+                <h6 class="card-subtitle mb-2 text-muted">SOTG significa "Spirit of the Game" (El Espíritu del Juego)</h6>
+                <p class="card-text">somos una comunidad de Discord. Juegos retros, torneos. entre otros.</p>
+                <a href="https://discord.gg/WVbsHjyRSa" class="card-link">enlace grupo de discord</a>
+                <a href="https://chat.whatsapp.com/D8CA70uILDQK4VUo4Gc0AG?mode=wwc" class="card-link">enlace grupo de whatsapp</a>
+            </div>
+        </div>
+        <!-- para mas contenido luego
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Comunidad de Sotg</h4>
+                <h6 class="card-subtitle mb-2 text-muted">SOTG significa "Spirit of the Game" (El Espíritu del Juego)</h6>
+                <p class="card-text">somos una Comunidad de Discord. jugamos juegos retros, torneos. entre otros.</p>
+                <a href="https://discord.gg/WVbsHjyRSa" class="card-link">Enlace de discord</a>
+                <a href="#" class="card-link">Otro enlace</a>
+            </div>
+        </div>
+        -->
+        <!-- Puedes agregar más contenido aquí -->
+        <div class="mt-4">
+            <p>Más contenido proximate...</p>
+        </div>
+    </main>
+
+    <!-- Footer siempre abajo -->
+    <footer class="bg-dark text-light py-4 sticky-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html" class="text-light me-3">Ir al Comienzo</a>
+                    <a href="mailto:support@sotg.com.ar" class="text-light">Enviar un correo electrónico</a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Copyright © 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
