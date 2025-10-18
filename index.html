@@ -1,119 +1,206 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio - COMUNIDAD SOTG</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        
-        main {
-            flex: 1;
-        }
-        
-        .sticky-footer {
-            margin-top: auto;
-        }
-    </style>
+    <title>SotG-Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Para diferentes formatos y dispositivos logo en ventana-->
+    <link rel="icon" type="image/png" sizes="32x32" href="imag/logo32px.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="imag/logo16px.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imag/logo180px.png">
+    <link rel="manifest" href="imag/site.webmanifest">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">SOTG</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Características</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Precios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Más opciones</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Acción</a>
-                            <a class="dropdown-item" href="#">Otra acción</a>
-                            <a class="dropdown-item" href="#">Algo más aquí</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Enlace separado</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="search" placeholder="Buscar">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imag/logo.png" alt="logo de la compañía">
+            <h2 class="nombre-empresa">SotG-Games</h2>       
+        </a>
+    
+        <nav>
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#juegos" class="nav-link">Juegos</a>
+            <a href="#nosotros" class="nav-link">Sobre nosotros</a>
+            <a href="dmca.html" class="nav-link" target="_blank">DMCA</a>     
+        </nav>
+    </header>
 
-    <!-- Contenido principal -->
-    <main class="container my-4">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">COMUNIDAD SOTG</h4>
-                <h6 class="card-subtitle mb-2 text-muted">SOTG significa "Spirit of the Game" (El Espíritu del Juego)</h6>
-                <p class="card-text">somos una comunidad de Discord. Juegos retros, torneos. entre otros.</p>
-                <a href="https://discord.gg/WVbsHjyRSa" class="card-link">enlace grupo de discord</a>
-                <a href="https://chat.whatsapp.com/D8CA70uILDQK4VUo4Gc0AG?mode=wwc" class="card-link">enlace grupo de whatsapp</a>
+    <section class="hero" id="inicio">
+        <h1>Warhammer: Retribution</h1>
+        <p>sumerge a los jugadores en el gótico y despiadado mundo de Warhammer Fantasy.</p> 
+        <p> Tras una traición catastrófica, deberás tomar el mando de una de las facciones icónicas —Humanos, Elfos Altos, Elfos Oscuros u Orcos— para reclamar venganza. Con una jugabilidad que combina el control directo de héroes con la estrategia en tiempo real de grandes batallas, cada decisión marcará el destino de un imperio sumido en la guerra.</p>
+        <a href="#juegos" class="btn">Explorar Juegos</a>
+    </section>
+
+    <section class="games" id="juegos">
+        <h2 class="section-title">Nuestros Juegos Destacados</h2>
+        <div class="games-container">
+            <!-- comentario 
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="game-content">
+                    <h3>Cyber Legends</h3>
+                    <p>Sumérgete en un mundo futurista lleno de acción y aventuras. Con gráficos impresionantes y una historia cautivadora.</p>
+                    <div class="game-price">$49.99</div>
+                    <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px;">Comprar</a>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="game-content">
+                    <h3>Fantasy Realms</h3>
+                    <p>Explora tierras mágicas, enfréntate a criaturas legendarias y descubre tesoros ocultos en este RPG épico.</p>
+                    <div class="game-price">$59.99</div>
+                    <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px;">Comprar</a>
+                </div>
+            </div>
+            -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://p4.wallpaperbetter.com/wallpaper/571/341/83/lord-of-the-rings-background-for-computer-wallpaper-preview.jpg');"></div>
+                <div class="game-content">
+                    <h3>El Señor de los Anillos: La Batalla por la Tierra Media</h3>
+                    <p>9Gb de este es pack del juego completo 1 , 2 Rts.</p>
+                    <p>"Para los que soñaron con comandar ejércitos en la Guerra del Anillo. Estrategia, héroes épicos y la esencia de Tolkien en tu PC."</p>
+                    <div class="game-price">Descargar</div>
+                    <a href="La Batalla por la Tierra Media.html" class="btn" style="margin-top: 15px; padding: 8px 20px;">Pack Completo 2.0</a>
+                </div>
             </div>
         </div>
-        <!-- para mas contenido luego
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Comunidad de Sotg</h4>
-                <h6 class="card-subtitle mb-2 text-muted">SOTG significa "Spirit of the Game" (El Espíritu del Juego)</h6>
-                <p class="card-text">somos una Comunidad de Discord. jugamos juegos retros, torneos. entre otros.</p>
-                <a href="https://discord.gg/WVbsHjyRSa" class="card-link">Enlace de discord</a>
-                <a href="#" class="card-link">Otro enlace</a>
+        <!-- comentario 
+    </section>
+
+        <section class="games" id="juegos">
+        <div class="games-container">
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="game-content">
+                    <h3>Cyber Legends</h3>
+                    <p>Sumérgete en un mundo futurista lleno de acción y aventuras. Con gráficos impresionantes y una historia cautivadora.</p>
+                    <div class="game-price">$49.99</div>
+                    <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px;">Comprar</a>
+                </div>
+            </div> 
+            
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                <div class="game-content">
+                    <h3>Fantasy Realms</h3>
+                    <p>Explora tierras mágicas, enfréntate a criaturas legendarias y descubre tesoros ocultos en este RPG épico.</p>
+                    <div class="game-price">$59.99</div>
+                    <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px;">Comprar</a>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://p4.wallpaperbetter.com/wallpaper/571/341/83/lord-of-the-rings-background-for-computer-wallpaper-preview.jpg');"></div>
+                <div class="game-content">
+                    <h3>Racing Extreme</h3>
+                    <p>Experimenta la emoción de la velocidad con los coches más rápidos y circuitos desafiantes alrededor del mundo.</p>
+                    <div class="game-price">$39.99</div>
+                    <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px;">Comprar</a>
+                </div>
             </div>
         </div>
         -->
-        <!-- Puedes agregar más contenido aquí -->
-        <div class="mt-4">
-            <p>Más contenido proximate...</p>
+    </section>
+    
+     <section class="about" id="nosotros">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Sobre SotG-Games</h2>
+                <p>Tu rincón gamer para conectar, jugar y compartir. Únete a nuestra comunidad, descubre nuevas aventuras y forma parte del equipo. ¡El siguiente nivel de gaming te espera!</p>
+                <p>En SotG-Games, Estrategia, batallas épicas y buena comunidad. Si te apasiona Warhammer: Retribution y los juegos de táctica, ¡este es tu lugar! Únete y forjemos leyendas juntos.</p>
+                <p>Nuestra comunidad de gamers crece cada día, y nos esforzamos por crear un espacio donde todos puedan encontrar el juego perfecto para ellos. Charla, gaming y diversión asegurada. ¿Te unes? </p>
+                <a href="https://discord.com/invite/WVbsHjyRSa"  target="_blank" class="btn">Grupo en Discord </a>
+                <a href="https://chat.whatsapp.com/D8CA70uILDQK4VUo4Gc0AG?mode=wwc" target="_blank" class="btn">Grupo de Whatsapp </a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Nuestro equipo de SotG-Games">
+            </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer siempre abajo -->
-    <footer class="bg-dark text-light py-4 sticky-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="index.html" class="text-light me-3">Ir al Comienzo</a>
-                    <a href="mailto:support@sotg.com.ar" class="text-light">Enviar un correo electrónico</a>
+ <!-- comentario 
+    <section class="contact" id="contacto">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Tu nombre">
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Copyright © 2025</p>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" placeholder="Asunto del mensaje">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+     -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>SotG-Games</h3>
+                <p>Tu destino para los mejores videojuegos. Ofrecemos una amplia selección de títulos a  jugar</p>
+                <div class="social-icons">
+                    <!-- comentario 
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    -->
+                    <a href="https://www.instagram.com/sotg.game/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/invite/WVbsHjyRSa"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#juegos">Juegos</a>
+                <a href="#nosotros">Sobre Nosotros</a>
+                <a href="dmca.html">AVISO LEGAL Y POLÍTICA DMCA</a>
+            </div>
+            <div class="footer-column">
+                 <!-- borra este comentario para agregar
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Gaming 123, Ciudad Digital</p>
+                <p><i class="fas fa-phone"></i> +54 9 11 3280 0603</p>
+                <p><i class="fas fa-envelope"></i> info@sotg.com.ar</p>
+                 -->
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SotG-Games. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Script de Bootstrap -->
-    <script src="bootstrap.bundle.min.js"></script>
-</body>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+            this.reset();
+        });
+    </script>
+</body>
 </html>

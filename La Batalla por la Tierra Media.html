@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SotG-Descargar La Batalla por la Tierra Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Para diferentes formatos y dispositivos logo en ventana-->
+    <link rel="icon" type="image/png" sizes="32x32" href="imag/logo32px.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="imag/logo16px.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imag/logo180px.png">
+    <link rel="manifest" href="imag/site.webmanifest">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a192f;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            background-color: #0a192f;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .nombre-empresa {
+            color: #f8dcbf;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        /* Contenido principal */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .note {
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0a192f;
+            color: white;
+            padding: 30px 20px 20px;
+            margin-top: auto; /* Esto asegura que el footer se mantenga abajo */
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 15px;
+            color: #f8dcbf;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column p, .footer-column a {
+            color: #ccc;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: #f8dcbf;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: rgba(248, 220, 191, 0.2);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imag/logo.png" alt="logo de la compañía">
+            <h2 class="nombre-empresa">SotG-Games</h2>       
+        </a>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>La Batalla por la Tierra Media</h1>
+            <p>Pack Completo 2.0</p>
+            <p>Haz clic en el botón de abajo para descargar el archivo. Se abrirá en una nueva ventana.</p>
+            
+            <!-- Enlace que se abre en nueva ventana -->
+            <a href="https://www.mediafire.com/file/czd240kh9yw78ow/La_batalla_por_la_tierra_media_Pack_Completo_2.0.iso/file" 
+               class="btn" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Descargar
+            </a>
+            <!-- borra este comentario para agregar Mas Enlace
+            <a href="https://www.mediafire.com/file/czd240kh9yw78ow/La_batalla_por_la_tierra_media_Pack_Completo_2.0.iso/file" 
+               class="btn" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Descargar
+            </a>
+            -->
+            <p class="note">Nota: El archivo se descargará desde MediaFire en una nueva pestaña.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>SotG-Games</h3>
+                <p>Reporta link caídos en nuestro grupo de Discord o en Instagram, Muchas Gracias!!</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sotg.game/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/invite/WVbsHjyRSa" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <a href="index.html">Inicio</a>
+                <a href="https://www.radmin-vpn.com/es/" target="_blank" >Radmin Vpn</a>
+                <a href="index.html"target="_blank" >Sobre Nosotros</a>
+                <a href="dmca.html" target="_blank" >Aviso Legal y DMCA</a>
+            </div>
+            <!-- borra este comentario para agregar 
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +54 9 11 3280 0603</p>
+                <p><i class="fas fa-envelope"></i> info@sotg.com.ar</p>
+            </div>
+             -->
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SotG-Games. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
