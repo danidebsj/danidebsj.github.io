@@ -60,7 +60,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 31, 60, 0.8), rgba(0, 31, 60, 0.9)), url('https://i.pinimg.com/1200x/c8/2e/a1/c82ea1615c4e70cdbce4a30c2d3f6250.jpg');
+            background: linear-gradient(rgba(0, 31, 60, 0.8), rgba(0, 31, 60, 0.9)), url('imag/minecraft-fondo.webp');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -344,4 +344,25 @@
             .contact-container {
                 padding: 20px;
             }
+        }
+        .server-icon {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+        .info { text-align: left; }
+        .online { color: #55ff55; font-weight: bold; }
+        .offline { color: #ff5555; font-weight: bold; }
+        h4 { color: #88e70c margin: 0; font-size: 1.2rem; }
+        p, small { margin: 2px 0; display: block; }
+
+        .card { 
+            background: #2b2f6b; 
+            padding: 15px; 
+            border-radius: 4px; 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            border: 2px solid #438a53;
+            width: fit-content;
         }

@@ -28,17 +28,25 @@
     </header>
 
     <section class="hero" id="inicio">
-        <h1>Warhammer: Retribution</h1>
-        <p>sumerge a los jugadores en el gótico y despiadado mundo de Warhammer Fantasy.</p> 
-        <p> Tras una traición catastrófica, deberás tomar el mando de una de las facciones icónicas —Humanos, Elfos Altos, Elfos Oscuros u Orcos— para reclamar venganza. Con una jugabilidad que combina el control directo de héroes con la estrategia en tiempo real de grandes batallas, cada decisión marcará el destino de un imperio sumido en la guerra.</p>
-        <a href="#juegos" class="btn">Explorar Juegos</a>
+        <div class="card">
+            <img src="imag/logo64px.png" alt="Icon" class="server-icon">
+            <div class="info">
+                <h2>SotG-Games</h2>
+                <small>1.21.1</small> 
+                <div id="status">Cargando...</div>
+                <p id="players"></p>
+                <small id="ip"> sotg.ddns.net:25570</small>
+            </div>
+        </div>
+        <p4>en PC cualquieras versiones son compatibles para entrar con java</p4>
+       <p4>para Jugar en android <a href="https://www.mediafire.com/file/zs0nmavtkhk9bn7/minecraft-1-21-132-musica.apk/file" class="link-style" target="_blank" rel="noopener noreferrer">descargar</a> el apk</p4> 
     </section>
 
     <section class="games" id="juegos">
         <h2 class="section-title">Nuestros Juegos Destacados</h2>
         <div class="games-container">
             <div class="game-card">
-                <div class="game-img" style="background-image: url('anillos.gif');"></div>
+                <div class="game-img" style="background-image: url('imag/eye-of-sauron.webp');"></div>
                 <div class="game-content">
                     <h3>El Señor de los Anillos: La Batalla por la Tierra Media</h3>
                     <p>9Gb de este es pack del juego completo 1 , 2 Rts.</p>
@@ -49,7 +57,7 @@
             </div>
             
             <div class="game-card">
-                <div class="game-img" style="background-image: url('age.gif');"></div>
+                <div class="game-img" style="background-image: url('imag/age\ of\ empires.jpg');"></div>
                 <div class="game-content">
                     <h3>ᴀɢᴇ ᴏꜰ ᴇᴍᴘɪʀᴇꜱ</h3>
                     <p>Age of Empires, el juego que definió los fundamentos de la estrategia en tiempo real y dejó un legado de 20 años de duración, batallas multijugador para 8 personas y mucho más. Bienvenido de nuevo a la historia.</p>
@@ -125,7 +133,7 @@
         </div>
     </footer>
 
-    <script>
+    <script src="script.js"></script> <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
